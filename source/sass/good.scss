@@ -1,0 +1,36 @@
+.good__name {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "PTSans Bold", "Arial", sans-serif;
+  color: $color-black;
+}
+
+.good__old-price {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "PTSans Bold", "Arial", sans-serif;
+  color: $color-grey;
+  text-decoration: line-through;
+}
+
+.good__new-price {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "PTSans Bold", "Arial", sans-serif;
+  color: $color-white;
+}
+
+.good__button {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.good__button--buy {
+  color: $color-white;
+}
+
+.good__button--bookmark {
+  color: $color-blue;
+}

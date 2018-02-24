@@ -1,0 +1,51 @@
+@mixin font {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  color: $color-white;
+}
+
+.order {
+  width: 100%;
+  background-color: $color-dark-blue;
+}
+
+.order__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.order__search-label {
+  margin-left: 50px;
+  padding-right: 10px;
+  @include font;
+}
+
+.order__search-input {
+  background-color: $color-dark-blue;
+  border: none;
+  @include font;
+}
+
+.order__bookmark {
+  margin-left: auto;
+  margin-right: 80px;
+  @include font;
+}
+
+.order__cart {
+  margin-right: 30px;
+  @include font;
+}
+
+.order__new-order {
+  padding: 13px 17px;
+  background-color: $color-green;
+}
+
+.order__link {
+  @include font;
+}

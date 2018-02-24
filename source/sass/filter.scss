@@ -1,0 +1,31 @@
+.filter__header {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PTSans Regular", "Arial", sans-serif;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.filter__second-header {
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "PTSans Bold", "Arial", sans-serif;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.filter__producer-label {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "PTSans Regular", "Arial", sans-serif;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.filter__submit-button {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PTSans Regular", "Arial", sans-serif;
+  color: $color-black;
+  text-transform: uppercase;
+}
