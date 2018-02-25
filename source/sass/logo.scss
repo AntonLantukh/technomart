@@ -1,7 +1,17 @@
 .logo {
+  position: relative;
   width: 222px;
-  padding: 10px 20px;
+  padding: 9px 0;
   background-color: $color-red;
+}
+
+.logo::after {
+  position: absolute;
+  bottom: -5px;
+  width: 222px;
+  height: 5px;
+  content: "";
+  background-color: rgb(181, 41, 51);
 }
 
 .logo__link {

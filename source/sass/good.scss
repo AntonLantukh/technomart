@@ -1,3 +1,15 @@
+.good {
+  position: relative;
+  width: 220px;
+  margin-right: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.good:nth-child(4) {
+  margin-right: 0;
+}
+
 .good__name {
   font-size: 18px;
   line-height: 20px;
@@ -5,32 +17,46 @@
   color: $color-black;
 }
 
-.good__old-price {
+.good__price {
   font-size: 17px;
   line-height: 18px;
   font-family: "PTSans Bold", "Arial", sans-serif;
+}
+
+.good__price--old {
   color: $color-grey;
   text-decoration: line-through;
 }
 
-.good__new-price {
-  font-size: 17px;
-  line-height: 18px;
-  font-family: "PTSans Bold", "Arial", sans-serif;
+.good__price--new {
   color: $color-white;
 }
 
 .good__button {
+  position: absolute;
+  width: 135px;
+  padding: 10px 0;
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum Regular", "Arial", sans-serif;
   text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
 }
 
 .good__button--buy {
+  top: 12%;
+  left: 21%;
   color: $color-white;
+  background-color: $color-green;
+  border-bottom: 4px solid rgb(54, 115, 21);
 }
 
 .good__button--bookmark {
+  top: 34%;
+  left: 21%;
+  padding: 6px 0;
   color: $color-blue;
+  background-color: $color-white;
+  border: 4px solid $color-green;
 }

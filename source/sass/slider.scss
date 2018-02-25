@@ -1,0 +1,106 @@
+.slider {
+  position: relative;
+  width: 620px;
+  height: 266px;
+  margin-right: 20px;
+}
+
+.slider--first {
+  background-image: url("../img/slider-perforator.jpg");
+}
+
+.slider--second {
+  background-image: url("../img/slider-drill.jpg");
+}
+
+.slider__header {
+  margin: 0;
+  padding-top: 26px;
+  padding-left: 23px;
+  padding-bottom: 4px;
+  font-size: 36px;
+  line-height: 30px;
+  font-family: "Cuprum Bold", "Arial", sans-serif;
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+.slider__description {
+  padding-left: 25px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "PTSans Regular", "Arial", sans-serif;
+  color: $color-white;
+}
+
+.slider__button {
+  width: 194px;
+  margin-top: 122px;
+  margin-left: 27px;
+}
+
+.slider__arrow {
+  display: block;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.slider__arrow--left {
+  position: absolute;
+  top: 115px;
+  left: 25px;
+  width: 22px;
+  height: 40px;
+  content: "";
+  background-position: -58px -104px;
+}
+
+.slider__arrow--right {
+  position: absolute;
+  top: 115px;
+  right: 19px;
+  width: 22px;
+  height: 40px;
+  content: "";
+  background-position: -149px -175px;
+}
+
+.slider__toggle {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  content: "";
+  border: none;
+  border-radius: 50%;
+  background-color: $color-white;
+
+  &:focus {
+      width: 9px;
+      height: 9px;
+      content: "";
+      background-color: $color-red;
+      border: 2px solid $color-white;
+  }
+
+  &:active {
+      width: 9px;
+      height: 9px;
+      content: "";
+      background-color: $color-red;
+      border: 2px solid $color-white;
+  }
+}
+
+.slider__toggle--first {
+  left: 295px;
+  bottom: 36px;
+}
+
+.slider__toggle--second {
+  left: 315px;
+  bottom: 36px;
+}

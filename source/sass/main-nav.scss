@@ -1,3 +1,35 @@
+.main-nav {
+  width: 100%;
+  padding-bottom: 60px;
+  background-color: rgb(243, 247, 249);
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  background-color: $color-blue;
+  border-bottom: 5px solid $color-dark-blue;
+}
+
+.main-nav__element {
+  width: 140px;
+  padding: 20px 34px 17px 27px;
+  text-align: center;
+}
+
+.main-nav__element:nth-child(1) {
+  padding-left: 52px;
+}
+
+.main-nav__element:nth-child(7) {
+  padding-right: 52px;
+}
+
+
 .main-nav__link {
   font-size: 17px;
   line-height: 17px;

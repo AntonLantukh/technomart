@@ -1,6 +1,13 @@
-.main__button {
+.main-button {
+  display: block;
+  padding: 10px 0;
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum Regular", "Arial", sans-serif;
   color: $color-white;
+  text-transform: uppercase;
+  text-align: center;
+  background: $color-red;
+  border-radius: 2px;
+  cursor: pointer;
 }

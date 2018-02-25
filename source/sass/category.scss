@@ -1,4 +1,89 @@
+.category {
+  position: relative;
+  width: 300px;
+  padding: 20px 0 21px 22px;
+  box-sizing: border-box;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      background-image: url("/../img/sprite.png");
+      background-repeat: no-repeat;
+    }
+}
+
+.category--materials {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 191, 71);
+
+    &::after {
+      top: 26%;
+      right: 14%;
+      width: 44px;
+      height: 65px;
+      background-position: -35px -175px;
+   }
+}
+
+.category--instruments {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(59, 188, 227);
+
+    &::after {
+      top: 26%;
+      right: 9%;
+      width: 75px;
+      height: 61px;
+      background-position: -120px -104px;
+   }
+}
+
+.category--technique {
+  margin-bottom: 20px;
+  background-color: rgb(220, 145, 216);
+
+    &::after {
+      top: 26%;
+      right: 10%;
+      width: 78px;
+      height: 62px;
+      background-position: -205px -114px;
+   }
+}
+
+.category--sales {
+  margin-bottom: 20px;
+  background-color: rgb(142, 215, 143);
+
+    &::after {
+      top: 21%;
+      right: 15%;
+      width: 59px;
+      height: 72px;
+      background-position: -208px -5px;
+   }
+}
+
+.category--delivery {
+  margin-top: -123px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 192, 71);
+
+    &::after {
+      top: 26%;
+      right: 10%;
+      width: 78px;
+      height: 63px;
+      background-position: -120px -31px;
+   }
+}
+
 .category__name {
+  margin: 0;
+  padding-bottom: 14px;
   font-size: 24px;
   line-height: 30px;
   font-family: "Cuprum Bold", "Arial", sans-serif;
@@ -6,9 +91,15 @@
 }
 
 .category__button {
+  display: block;
+  width: 138px;
+  padding: 10px 0;
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum Regular", "Arial", sans-serif;
   color: $color-white;
+  text-align: center;
   text-transform: uppercase;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.1);
 }

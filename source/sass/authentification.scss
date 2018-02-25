@@ -1,28 +1,66 @@
+.authentification {
+  width: 100%;
+  background-color: rgb(243, 247, 249);
+}
+
+.authentification__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 49px;
+  padding-bottom: 40px;
+}
+
 .authentification__site-about {
+  width: 215px;
+  margin-left: 52px;
   font-size: 16px;
   line-height: 23px;
   font-family: "Cuprum Italic", "Arial", sans-serif;
   color: $color-red;
 }
 
+.authentification__site-about p {
+  margin: 0;
+  padding: 0;
+}
+
+.authentification__contacts {
+  width: 300px;
+  margin-left: 18px;
+}
+
 .authentification__phone {
-  font-size: 21px;
+  width: 246px;
+  padding: 8px 0px 9px 17px;
+  text-align: center;
+  font-size: 20px;
   line-height: 18px;
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum Bold", "Arial", sans-serif;
   color: $color-red;
+  border: 3px solid $color-white;
 }
 
 .authentification__address {
-  font-size: 14px;
+  margin: 5px 0 0 11px;
+  font-size: 13px;
   line-height: 24px;
-  font-family: "Cuprum Regular", "Arial", sans-serif;
+  font-family: "Cuprum Bold", "Arial", sans-serif;
   color: $color-blue;
 }
 
-.authentification__login-button {
+.authentification__buttons-container {
+  width: 283px;
+  margin-top: 10px;
+}
 
+.authentification__login-button {
+  margin-right: 5px;
+  padding: 12px 25px 12px 49px;
 }
 
 .authentification__register-button {
-
+   padding: 12px 25px;
 }

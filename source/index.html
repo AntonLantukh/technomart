@@ -30,24 +30,26 @@
         </div>
       </div>
       <div class="main-header__contacts authentification">
-        <div class="authentification__site-about">
-          <p>
-            Интернет-магазин
-            строительных материалов
-            и инструментов для ремонта
-          </p>
-        </div>
-        <div class="authentification__contacts">
-          <span class="authentification__phone">+7 (812) 555-05-55</span>
-          <span class="authentification__address">г.Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</span>
-        </div>
-        <div class="authentification__buttons-container">
-          <a class="authentification__login-button reg-button">Войти</a>
-          <a class="authentification__register-button reg-button">Регистрация</a>
+        <div class="authentification__wrapper">
+          <div class="authentification__site-about">
+            <p>
+              Интернет-магазин
+              строительных материалов <br>
+              и инструментов для ремонта
+            </p>
+          </div>
+          <div class="authentification__contacts">
+            <div class="authentification__phone">+7 (812) 555-05-55</div>
+            <div class="authentification__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+          </div>
+          <div class="authentification__buttons-container">
+            <a class="authentification__login-button reg-button">Войти</a>
+            <a class="authentification__register-button reg-button">Регистрация</a>
+          </div>
         </div>
       </div>
       <nav class="main-header__navigation main-nav">
-        <ul>
+        <ul class="main-nav__wrapper">
           <li class="main-nav__element">
             <a class="main-nav__link" href="#">Главная</a>
           </li>
@@ -86,29 +88,28 @@
           <h3 class="category__name">Техника</h3>
           <a class="category__button">Для стройки</a>
         </div>
+        <div class="assortment__element slider slider--first">
+          <span class="slider__arrow slider__arrow--left"></span>
+          <div class="slider__element slider__element--first">
+            <h3 class="slider__header">Перфораторы</h3>
+            <span class="slider__description">Настоящие мужские игрушки</span>
+          </div>
+          <div class="slider__element slider__element--second visually-hidden">
+            <h3 class="slider__header">Дрели</h3>
+            <span class="slider__description">Соседям на радость!</span>
+          </div>
+          <a class="slider__button main-button">Открыть каталог</a>
+          <button class="slider__toggle slider__toggle--first"></button>
+          <button class="slider__toggle slider__toggle--second"></button>
+          <span class="slider__arrow slider__arrow--right"></span>
+        </div>
         <div class="assortment__element category category--sales">
           <h3 class="category__name">Скидки 50%</h3>
           <a class="category__button">На 350 товаров</a>
         </div>
         <div class="assortment__element category category--delivery">
           <h3 class="category__name">Доставка</h3>
-          <a class="category__button">Беплатно</a>
-        </div>
-        <div class="assortment__element advertising">
-          <div class="advertising__element">
-            <span class="advertising__arrow-left"></span>
-            <h3 class="advertising__header">Перфораторы</h3>
-            <span class="advertising__description">Настоящие мужские игрушки</span>
-            <a class="advertising__button main-button">Открыть каталог</a>
-            <span class="advertising__arrow-right"></span>
-          </div>
-          <div class="advertising__element">
-            <span class="advertising__arrow-left"></span>
-            <h3 class="advertising__header">Дрели</h3>
-            <span class="advertising__description">Соседям на радость!</span>
-            <a class="advertising__button main-button">Открыть каталог</a>
-            <span class="advertising__arrow-right"></span>
-          </div>
+          <a class="category__button">Бесплатно</a>
         </div>
       </section>
       <section class="popular-goods">
@@ -118,35 +119,35 @@
         </div>
         <div class="popular-goods__container">
           <div class="popular-goods__element good">
-            <img src="img/good-2000.jpg">
+            <img src="img/good-9000.jpg">
             <button class="good__button good__button--buy">Купить</button>
             <button class="good__button good__button--bookmark">В закладки</button>
             <h3 class="good__name">Перформатор BOSCH BFG 9000</h3>
-            <span class="good__old-price">32500 р.</span>
-            <span class="good__new-prce">25500 р.</span>
+            <span class="good__price good__price--old">32500 р.</span>
+            <span class="good__price good__price--new">25500 р.</span>
           </div>
           <div class="popular-goods__element good">
             <img src="img/good-3000.jpg">
             <button class="good__button good__button--buy">Купить</button>
             <button class="good__button good__button--bookmark">В закладки</button>
             <h3 class="good__name">Перформатор BOSCH BFG 3000</h3>
-            <span class="good__old-price">22500 р.</span>
-            <span class="good__new-prce">15500 р.</span>
+            <span class="good__price good__price--old">22500 р.</span>
+            <span class="good__prce good__price--new">15500 р.</span>
           </div>
           <div class="popular-goods__element good">
             <img src="img/good-6000.jpg">
             <button class="good__button good__button--buy">Купить</button>
             <button class="good__button good__button--bookmark">В закладки</button>
             <h3 class="good__name">Перформатор BOSCH BFG 6000</h3>
-            <span class="good__old-price">30500 р.</span>
-            <span class="good__new-prce">25500 р.</span>
+            <span class="good__price good__price--old">30500 р.</span>
+            <span class="good__prce good__price--new">25500 р.</span>
           </div>
           <div class="popular-goods__element good good--new">
-            <img src="img/good-9000.jpg">
+            <img src="img/good-2000.jpg">
             <button class="good__button good__button--buy">Купить</button>
             <button class="good__button good__button--bookmark">В закладки</button>
             <h3 class="good__name">Перформатор BOSCH BFG 2000</h3>
-            <span class="good__new-prce">12500 р.</span>
+            <span class="good__price good__price--new">12500 р.</span>
           </div>
         </div>
       </section>
@@ -335,5 +336,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/slider.js"></script>
   </body>
 </html>

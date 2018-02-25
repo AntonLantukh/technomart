@@ -1,7 +1,35 @@
+.popular-goods {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.popular-goods__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.popular-goods__about {
+  display: flex;
+  justify-content: space-between;
+  padding: 29px 24px 25px 28px;
+  background-color: rgb(249, 245, 240);
+  margin-bottom: 20px;
+}
+
 .popular-goods__header {
+  margin: 0;
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum Regular", "Arial", sans-serif;
   color: $color-blue;
   text-transform: uppercase;
+  font-weight: normal;
+}
+
+.popular-goods__all-button {
+  width: 252px;
+  margin-top: -3px;
 }
