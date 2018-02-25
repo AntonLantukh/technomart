@@ -1,12 +1,12 @@
 .popular-goods {
   width: 940px;
-  margin: 0 auto;
+  margin: 0 auto 22px auto;
 }
 
 .popular-goods__container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   flex-shrink: 0;
 }

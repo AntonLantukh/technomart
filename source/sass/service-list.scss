@@ -1,6 +1,36 @@
+.service-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    top: -44px;
+    width: 10px;
+    height: 272px;
+    background-position: -100px -5px;
+    background-image: url("/img/sprite.png");
+    background-repeat: no-repeat;
+    content: "";
+
+  }
+}
+
+.service-list__element {
+  padding: 15px 136px 15px 22px;
+  background-color: $color-blue;
+  border-bottom: 1px solid rgba(77, 199, 123, 0.1);
+}
+
+.service-list__element:nth-child(3) {
+  border-bottom: none;
+}
+
 .service-list__button {
   font-size: 21px;
   line-height: 30px;
   font-family: "Cuprum Bold", "Arial", sans-serif;
-  color: $color-blue;
+  color: $color-white;
 }

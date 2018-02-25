@@ -724,15 +724,26 @@ template {
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  .good:hover .good__button {
+    opacity: 1; }
+  .good:hover .good__image {
+    opacity: 0; }
 
 .good:nth-child(4) {
   margin-right: 0; }
 
 .good__name {
+  width: 170px;
+  margin: 0 auto;
+  padding-top: 34px;
   font-size: 18px;
   line-height: 20px;
   font-family: "PTSans Bold", "Arial", sans-serif;
-  color: black; }
+  color: black;
+  text-align: center; }
+
+.good:nth-child(4) .good__name {
+  margin-bottom: 41px; }
 
 .good__price {
   font-size: 17px;
@@ -740,33 +751,55 @@ template {
   font-family: "PTSans Bold", "Arial", sans-serif; }
 
 .good__price--old {
+  width: 66px;
+  margin-bottom: 11px;
+  margin-left: 77px;
+  padding-top: 11px;
   color: darkgray;
   text-decoration: line-through; }
 
 .good__price--new {
-  color: white; }
+  position: relative;
+  width: 80px;
+  margin-left: 42px;
+  margin-bottom: 20px;
+  padding: 10px 11px 10px 28px;
+  text-align: center;
+  color: white;
+  background-color: #ee3643; }
+  .good__price--new::after {
+    position: absolute;
+    right: -19%;
+    bottom: 0%;
+    width: 0;
+    height: 0;
+    border-top: 19px solid transparent;
+    border-left: 23px solid #ee3643;
+    border-bottom: 19px solid transparent;
+    content: ""; }
 
 .good__button {
   position: absolute;
   width: 135px;
-  padding: 10px 0;
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum Regular", "Arial", sans-serif;
   text-transform: uppercase;
+  opacity: 0;
   border: none;
   border-radius: 3px; }
 
 .good__button--buy {
-  top: 12%;
-  left: 21%;
+  top: 45px;
+  left: 41px;
+  padding: 9px 0;
   color: white;
   background-color: #63a63e;
-  border-bottom: 4px solid #367315; }
+  border-bottom: 3px solid #367315; }
 
 .good__button--bookmark {
-  top: 34%;
-  left: 21%;
+  top: 91px;
+  left: 41px;
   padding: 6px 0;
   color: #32425c;
   background-color: white;
@@ -913,16 +946,67 @@ template {
   color: black;
   text-transform: uppercase; }
 
+.popular-brands {
+  width: 940px;
+  margin: 0 auto 64px auto; }
+
+.popular-brands__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 24px 23px 24px;
+  background-color: #f9f5f0;
+  margin-bottom: 20px; }
+
 .popular-brands__header {
+  margin: 0;
   font-size: 30px;
   line-height: 30px;
   font-family: "Cuprum Regular", "Arial", sans-serif;
   color: #32425c;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: normal; }
+
+.popular-brands__all-button {
+  width: 252px;
+  margin-top: -5px; }
+
+.popular-brands__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.popular-brands__item {
+  width: 220px;
+  height: 146px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.popular-brands__item:nth-child(4n) {
+  margin-right: 0; }
+
+.popular-brands__image {
+  margin: 0 auto;
+  padding: 3% 2%; }
 
 .popular-goods {
   width: 940px;
-  margin: 0 auto; }
+  margin: 0 auto 22px auto; }
 
 .popular-goods__container {
   display: -webkit-box;
@@ -932,9 +1016,9 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-negative: 0;
@@ -971,36 +1055,101 @@ template {
   color: black;
   background-color: white; }
 
+.service-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .service-list::after {
+    position: absolute;
+    right: 0;
+    top: -44px;
+    width: 10px;
+    height: 272px;
+    background-position: -100px -5px;
+    background-image: url("/img/sprite.png");
+    background-repeat: no-repeat;
+    content: ""; }
+
+.service-list__element {
+  padding: 15px 136px 15px 22px;
+  background-color: #32425c;
+  border-bottom: 1px solid rgba(77, 199, 123, 0.1); }
+
+.service-list__element:nth-child(3) {
+  border-bottom: none; }
+
 .service-list__button {
   font-size: 21px;
   line-height: 30px;
   font-family: "Cuprum Bold", "Arial", sans-serif;
-  color: #32425c; }
+  color: white; }
+
+.service {
+  width: 100%;
+  background-image: url("/../img/background-service.png"); }
+
+.service__about {
+  padding: 68px 20px 0 131px; }
 
 .service__header {
+  margin: 0;
+  padding-bottom: 15px;
   font-size: 30px;
   line-height: 24px;
   font-family: "Cuprum Regular", "Arial", sans-serif;
   color: black;
+  font-weight: normal;
   text-transform: uppercase; }
 
-.service__header {
-  font-size: 13px;
-  line-height: 24px;
-  font-family: "PTSans Regular", "Arial", sans-serif;
-  color: black; }
-
-.service__element-header {
-  font-size: 36px;
+.service__description {
+  width: 414px;
+  margin-bottom: 68px;
+  padding: 0;
+  font-size: 14px;
   line-height: 24px;
   font-family: "Cuprum Bold", "Arial", sans-serif;
   color: black; }
 
+.service__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 0 0 130px; }
+
+.service__element-header {
+  margin-top: 5px;
+  margin-bottom: 31px;
+  font-size: 36px;
+  line-height: 24px;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  color: #32425c;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+.service__element {
+  padding-right: 400px;
+  padding-bottom: 130px; }
+
 .service__element-description {
+  width: 280px;
+  margin: 0;
   font-size: 13px;
   line-height: 24px;
   font-family: "PTSans Regular", "Arial", sans-serif;
   color: black; }
+
+.service__element--delivery {
+  background-image: url("/img/service-delivery.png");
+  background-repeat: no-repeat;
+  background-position: 71% 85%; }
+
+.service__container {
+  margin-left: 83px; }
 
 .slider {
   position: relative;

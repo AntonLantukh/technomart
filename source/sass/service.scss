@@ -1,28 +1,70 @@
+.service {
+  width: 100%;
+  background-image: url("/../img/background-service.png");
+}
+
+.service__about {
+  padding: 68px 20px 0 131px;
+}
+
 .service__header {
+  margin: 0;
+  padding-bottom: 15px;
   font-size: 30px;
   line-height: 24px;
   font-family: "Cuprum Regular", "Arial", sans-serif;
   color: $color-black;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
-.service__header {
-  font-size: 13px;
-  line-height: 24px;
-  font-family: "PTSans Regular", "Arial", sans-serif;
-  color: $color-black;
-}
-
-.service__element-header {
-  font-size: 36px;
+.service__description {
+  width: 414px;
+  margin-bottom: 68px;
+  padding: 0;
+  font-size: 14px;
   line-height: 24px;
   font-family: "Cuprum Bold", "Arial", sans-serif;
   color: $color-black;
 }
 
+.service__wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 0 130px;
+}
+
+.service__element-header {
+  margin-top: 5px;
+  margin-bottom: 31px;
+  font-size: 36px;
+  line-height: 24px;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  color: $color-blue;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.service__element {
+  padding-right: 400px;
+  padding-bottom: 130px;
+}
+
 .service__element-description {
+  width: 280px;
+  margin: 0;
   font-size: 13px;
   line-height: 24px;
   font-family: "PTSans Regular", "Arial", sans-serif;
   color: $color-black;
+}
+
+.service__element--delivery {
+  background-image: url("/img/service-delivery.png");
+  background-repeat: no-repeat;
+  background-position: 71% 85%;
+}
+
+.service__container {
+  margin-left: 83px;
 }
