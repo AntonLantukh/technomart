@@ -1,13 +1,27 @@
+.contacts {
+  margin-left: 115px;
+}
+
 .contacts__header {
-  font-size: 21px;
+  margin: 0;
+  padding-bottom: 12px;
+  font-size: 29px;
   line-height: 30px;
-  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
   color: $color-black;
+  text-transform: uppercase;
 }
 
 .contacts__description {
+  width: 190px;
+  margin-left: -3px;
+  padding-bottom: 19px;
   font-size: 13px;
   line-height: 24px;
   font-family: "PTSans Regular", "Arial", sans-serif;
   color: $color-black;
+}
+
+.contacts__map {
+  padding-bottom: 37px;
 }

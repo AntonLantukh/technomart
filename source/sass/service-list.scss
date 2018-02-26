@@ -19,9 +19,18 @@
 }
 
 .service-list__element {
-  padding: 15px 136px 15px 22px;
+  padding: 14px 134px 15px 16px;
   background-color: $color-blue;
   border-bottom: 1px solid rgba(77, 199, 123, 0.1);
+
+    &:hover {
+      background-color: $color-dark-blue;
+    }
+}
+
+.service-list__element--active {
+  color: $color-blue;
+  background-color: $color-white;
 }
 
 .service-list__element:nth-child(3) {
@@ -33,4 +42,10 @@
   line-height: 30px;
   font-family: "Cuprum Bold", "Arial", sans-serif;
   color: $color-white;
+  background-color: transparent;
+  border: none;
+}
+
+.service-list__button--active {
+  color: $color-blue;
 }

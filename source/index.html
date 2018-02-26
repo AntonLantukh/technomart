@@ -192,20 +192,20 @@
         </div>
         <div class="service__wrapper">
           <ul class="service__navigation service-list">
-            <li class="service-list__element service-list__element--delivery">
-              <a class="service-list__button">Доставка</a>
+            <li class="service-list__element service-list__element--active service-list__element--delivery">
+              <button class="service-list__button service-list__button--delivery service-list__button--active">Доставка</button>
             </li>
             <li class="service-list__element service-list__element--guarantee">
-              <a class="service-list__button">Гарантия</a>
+              <button class="service-list__button service-list__button--guarantee">Гарантия</button>
             </li>
             <li class="service-list__element service-list__element--credit">
-              <a class="service-list__button">Кредит</a>
+              <button class="service-list__button service-list__button--credit">Кредит</button>
             </li>
           </ul>
           <div class="service__container">
             <div class="service__element service__element--delivery">
               <h3 class="service__element-header">Доставка</h3>
-              <p class="service__element-description">
+              <p class="service__element-description service__element-description--delivery">
                 Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно!<br>
                 Ведь мы неплохо зарабаотаем,<br>
@@ -214,9 +214,9 @@
             </div>
             <div class="service__element service__element--guarantee visually-hidden">
               <h3 class="service__element-header">Гарантия</h3>
-              <p class="service__element-description">
-                Если купленный у нас товар поламается или заискрит,
-                а также в случае пожара, спровоцированного его возгаранием,
+              <p class="service__element-description service__element-description--guarantee">
+                Если купленный у нас товар поламается или заискрит, <br>
+                а также в случае пожара, спровоцированного его возгаранием,<br>
                 вы всегда можете быть уверенным в нашей гарантии. Мы обменяем
                 сгоревший товар на новый. <br>
                 Дом уж восстановите как-нибудь сами
@@ -224,24 +224,24 @@
             </div>
             <div class="service__element service__element--credit visually-hidden">
               <h3 class="service__element-header">Кредит</h3>
-              <p class="service__element-description">
+              <p class="service__element-description  service__element-description--credit">
                 Залезть в долговую яму стало проще!
                 Кредитные консультации придут вам на помощь.
               </p>
-              <a class="service__element-button main-button"></a>
+              <a class="service__element-button main-button">Отправить заявку</a>
             </div>
           </div>
         </div>
       </article>
       <section class="description">
         <div class="description__element about">
-          <h2 class="about__header">Компания "ТЕХНОМАРТ"</h2>
+          <h2 class="about__header">Компания «ТЕХНОМАРТ»</h2>
           <p class="about__promo">
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-            строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.
+            строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
           <p class="about__promo">
-            Мы можем доставить ваш товар в самые отделенные точки России!
+            Мы можем доставить ваш товар в самые отделенные точки России!<br>
             Техномарт рабоает со многими транспортными компаниями:
           </p>
           <ul class="about__list">
@@ -263,7 +263,7 @@
              заехав в наш офис:
           </p>
           <div class="contacts__map">
-            <span></span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123848!2d30.32089461591033!3d59.93879686904814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1519679410605" width="300" height="158" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
           <a class="contacts__button main-button">Заблудились? Напишите нам!</a>
         </div>
@@ -337,5 +337,6 @@
       </section>
     </footer>
     <script src="js/slider.js"></script>
+    <script src="js/service-list.js"></script>
   </body>
 </html>
