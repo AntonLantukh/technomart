@@ -1,8 +1,26 @@
+.footer-madeby {
+  background-color: $color-dark-blue;
+}
+
+.footer-madeby__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+  padding: 35px 0 25px 6px;
+}
+
 .footer-madeby__copyright {
+  width: 245px;
   font-size: 16px;
   line-height: 18px;
   font-family: "Cuprum Regular", "Arial", sans-serif;
   color: $color-white;
+}
+
+.footer-madeby__copyright p {
+  margin: 0;
 }
 
 .footer-madeby__about {
@@ -13,8 +31,32 @@
 }
 
 .footer-madeby__about {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  color: $color-white;
+}
+
+.footer-madeby__e-mail {
+  margin-left: 40px;
+}
+
+.footer-madeby__author {
+  margin-right: 17px;
+}
+
+.footer-madeby__e-mail a {
   font-size: 16px;
   line-height: 18px;
   font-family: "Cuprum Regular", "Arial", sans-serif;
   color: $color-yellow;
+  text-decoration: none;
+}
+
+.footer-madeby__author a {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  color: $color-yellow;
+  text-decoration: none;
 }

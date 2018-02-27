@@ -5,6 +5,10 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
 
+  &:hover {
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  }
+
   &:hover .good__button {
     opacity: 1;
   }
@@ -81,6 +85,7 @@
   opacity: 0;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .good__button--buy {
@@ -90,6 +95,34 @@
   color: $color-white;
   background-color: $color-green;
   border-bottom: 3px solid rgb(54, 115, 21);
+
+    &::after {
+      position: absolute;
+      left: 13px;
+      width: 15px;
+      height: 15px;
+      content: "";
+      opacity: 0.3;
+      background-position: -5px -5px;
+      background-image: url("/../img/sprite.png");
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      background-color: rgb(95, 187, 45);
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    &:active {
+      background-color: rgb(81, 133, 52);
+    }
+
+    &:active::after {
+      opacity: 1;
+    }
 }
 
 .good__button--bookmark {
@@ -99,4 +132,29 @@
   color: $color-blue;
   background-color: $color-white;
   border: 4px solid $color-green;
+
+  &:hover {
+    border: 4px solid rgb(50, 66, 92);
+  }
+
+  &:active {
+    color: rgba(50, 66, 92, 0.3);
+    border: 4px solid rgba(50, 66, 92, 0.3);
+  }
+}
+
+.good--new {
+  position: relative;
+}
+
+.good--new::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 59px;
+  background-image: url("/../img/new.png");
+  background-repeat: no-repeat;
+  content: "";
+  z-index: 1;
 }

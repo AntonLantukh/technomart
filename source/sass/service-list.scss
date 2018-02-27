@@ -22,6 +22,7 @@
   padding: 14px 134px 15px 16px;
   background-color: $color-blue;
   border-bottom: 1px solid rgba(77, 199, 123, 0.1);
+  cursor: pointer;
 
     &:hover {
       background-color: $color-dark-blue;
@@ -44,6 +45,7 @@
   color: $color-white;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .service-list__button--active {

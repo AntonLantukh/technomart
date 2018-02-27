@@ -33,6 +33,7 @@
 }
 
 .authentification__phone {
+  position: relative;
   width: 246px;
   padding: 8px 0px 9px 17px;
   text-align: center;
@@ -41,6 +42,18 @@
   font-family: "Cuprum Bold", "Arial", sans-serif;
   color: $color-red;
   border: 3px solid $color-white;
+
+      &::after {
+        position: absolute;
+        left: 4%;
+        top: 17%;
+        width: 19px;
+        height: 19px;
+        content: "";
+        background-image: url("/img/sprite.png");
+        background-repeat: no-repeat;
+        background-position: -120px -175px;
+      }
 }
 
 .authentification__address {
@@ -57,10 +70,45 @@
 }
 
 .authentification__login-button {
+  position: relative;
   margin-right: 5px;
   padding: 12px 25px 12px 49px;
+
+    &::after {
+      position: absolute;
+      left: 12%;
+      top: 31%;
+      width: 20px;
+      height: 17px;
+      content: "";
+      background-image: url("/img/sprite.png");
+      background-repeat: no-repeat;
+      background-position: -5px -175px;
+    }
+
+    &:hover {
+      color: $color-red;
+    }
+
+    &:hover::after {
+      background-image: url("/img/icon-login-blue.png");
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
 }
 
 .authentification__register-button {
    padding: 12px 25px;
+
+   &:hover {
+     color: $color-red;
+   }
+
+   &:active {
+     color: rgba(0, 0, 0, 0.3);
+   }
 }

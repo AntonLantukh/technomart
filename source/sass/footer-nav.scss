@@ -1,4 +1,32 @@
+.footer-nav {
+  background-color: $color-blue;
+}
+
+.footer-nav__wrapper {
+  margin-left: 72px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.footer-nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 546px;
+  margin-top: 36px;
+  margin-bottom: 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-nav__logo {
+  padding: 22px 0;
+  margin-bottom: 30px;
+}
+
 .footer-nav__address {
+  margin: 0 0 0 4px;
   font-size: 18px;
   line-height: 24px;
   font-family: "Cuprum Regular", "Arial", sans-serif;
@@ -6,6 +34,7 @@
 }
 
 .footer-nav__phone {
+  margin: 0 0 0 4px;
   font-size: 18px;
   line-height: 24px;
   font-family: "Cuprum Regular", "Arial", sans-serif;

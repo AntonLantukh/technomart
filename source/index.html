@@ -14,12 +14,11 @@
           </div>
           <div class="order__search">
             <form>
-              <label class="order__search-label" for="search">Поиск:</label>
-              <input class="order__search-input" type="search" name="search" id="search">
+              <input class="order__search-input" placeholder="Поиск:">
             </form>
           </div>
           <div class="order__bookmark">
-            <span>Закладок: 0</span>
+            <span>Закладки: 0</span>
           </div>
           <div class="order__cart">
             <span>Корзина: 0</span>
@@ -265,78 +264,86 @@
           <div class="contacts__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123848!2d30.32089461591033!3d59.93879686904814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1519679410605" width="300" height="158" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
+          <div class="contacts__map-full-screen visually-hidden">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123848!2d30.32089461591033!3d59.93879686904814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1519679410605" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
           <a class="contacts__button main-button">Заблудились? Напишите нам!</a>
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <section class="main-footer__element footer-nav">
-        <div class="footer-nav__element">
-          <div class ="footer-nav__logo logo">
-            <a class="logo-link">Техномарт</a>
-          </div>
-          <p class ="footer-nav__address">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
-          <p class ="footer-nav__phone">+7 (812) 555-05-55</p>
-        </div>
-        <div class="footer-nav__wrapper">
+        <div class="main-footer__wrapper">
           <div class="footer-nav__element">
-            <ul class="footer-nav__list">
-              <li class="footer-nav__list-element">
-                <a class="footer-nav__link" href="#">Компания</a>
-              </li>
-              <li class="footer-nav__list-element">
-                <a class="footer-nav__link" href="#">Новости</a>
-              </li>
-              <li class="footer-nav__list-element">
-                <a class="footer-nav__link" href="#">Каталог</a>
-              </li>
-              <li class="footer-nav__list-element">
-                <a class="footer-nav__link" href="#">Доставка</a>
-              </li>
-              <li>
-                <a class="footer-nav__link" href="#">Контакты</a>
-              </li>
-            </ul>
+            <div class ="footer-nav__logo logo">
+              <a class="logo__link logo__link--footer">Техномарт</a>
+            </div>
+            <p class ="footer-nav__address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+            <p class ="footer-nav__phone">+7 (812) 555-05-55</p>
+          </div>
+          <div class="footer-nav__wrapper">
+            <div class="footer-nav__element">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__list-element">
+                  <a class="footer-nav__link" href="#">Компания</a>
+                </li>
+                <li class="footer-nav__list-element">
+                  <a class="footer-nav__link" href="#">Новости</a>
+                </li>
+                <li class="footer-nav__list-element">
+                  <a class="footer-nav__link" href="#">Каталог</a>
+                </li>
+                <li class="footer-nav__list-element">
+                  <a class="footer-nav__link" href="#">Доставка</a>
+                </li>
+                <li>
+                  <a class="footer-nav__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-footer__element popular-categoties">
+              <ul class="popular-categoties__list features">
+                <li class="features__element">
+                  <a class="features__link" href="#">Материалы</a>
+                </li>
+                <li class="features__element">
+                  <a class="features__link" href="#">Техника</a>
+                </li>
+                <li class="features__element">
+                  <a class="features__link" href="#">Инструмент</a>
+                </li>
+                <li class="features__element">
+                  <a class="features__link" href="#">Спецпредложения</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="main-footer__element popular-categoties">
-          <ul class="popular-categoties__list features">
-            <li class="features__element">
-              <a class="features__link" href="#">Материалы</a>
-            </li>
-            <li class="features__element">
-              <a class="features__link" href="#">Техника</a>
-            </li>
-            <li class="features__element">
-              <a class="features__link" href="#">Инструмент</a>
-            </li>
-            <li class="features__element">
-              <a class="features__link" href="#">Спецпредложения</a>
-            </li>
-          </ul>
-      </div>
       </section>
       <section class="main-footer__contacts footer-madeby">
-        <div class="footer-madeby__copyright">
-          <p>&copy; 2010 - 2017 Компания "Техномарт"
-          Все права защищены </p>
-        </div>
-        <div class="footer-madeby__social social-buttons">
-          <a class="social-buttons__item" href="#">Вконтакте</a>
-          <a class="social-buttons__item" href="#">Фейсбук</a>
-          <a class="social-buttons__item" href="#">Инстаграм</a>
-        </div>
-        <div class="footer-madeby__e-mail">
-          <span class="footer-madeby__about">Обратная связь:</span>
-          <a>mail@htmlacademy.ru</a>
-        </div>
-        <div class="footer-madeby__author">
-          <span class="footer-madeby__about">Разработано &ndash;</span>
-          <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+        <div class="footer-madeby__wrapper">
+          <div class="footer-madeby__copyright">
+            <p>&copy; 2010-2017 Компания «Техномарт»
+            Все права защищены </p>
+          </div>
+          <div class="footer-madeby__social social-buttons">
+            <a class="social-buttons__item social-buttons__item--vk" href="#">Вконтакте</a>
+            <a class="social-buttons__item social-buttons__item--fb" href="#">Фейсбук</a>
+            <a class="social-buttons__item social-buttons__item--insta" href="#">Инстаграм</a>
+          </div>
+          <div class="footer-madeby__e-mail">
+            <div class="footer-madeby__about">Обратная связь:</div>
+            <a a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="footer-madeby__author">
+            <div class="footer-madeby__about">Разработано &ndash;</div>
+            <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+          </div>
         </div>
       </section>
     </footer>
     <script src="js/slider.js"></script>
     <script src="js/service-list.js"></script>
+    <script src="js/contacts.js"></script>
   </body>
 </html>

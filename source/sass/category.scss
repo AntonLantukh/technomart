@@ -17,6 +17,9 @@
   margin-right: 20px;
   margin-bottom: 20px;
   background-color: rgb(255, 191, 71);
+  background-image: url("/../img/new.png");
+  background-position: 239px 0;
+  background-repeat: no-repeat;
 
     &::after {
       top: 26%;
@@ -102,4 +105,13 @@
   text-transform: uppercase;
   border-radius: 2px;
   background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }

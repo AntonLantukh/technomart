@@ -1,6 +1,17 @@
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  width: 521px;
+  margin-left: 26px;
+  padding: 0;
+}
+
 .features__link {
   font-size: 18px;
   line-height: 24px;
   font-family: "Cuprum Regular", "Arial", sans-serif;
   color: $color-yellow;
+  text-decoration: none;
 }

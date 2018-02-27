@@ -1,17 +1,23 @@
 .logo {
-  position: relative;
-  width: 222px;
-  padding: 9px 0;
+  width: 223px;
+  height: 16px;
   background-color: $color-red;
-}
+  border-bottom: 5px solid rgb(181, 41, 51);
 
-.logo::after {
-  position: absolute;
-  bottom: -5px;
-  width: 222px;
-  height: 5px;
-  content: "";
-  background-color: rgb(181, 41, 51);
+    &:hover {
+      background-color: rgb(202, 44, 55);
+      border-bottom: 5px solid rgb(154, 33, 42);
+    }
+
+    &:focus {
+      background-color: rgb(186, 39, 50);
+      border-bottom: 5px solid rgb(142, 30, 38);
+    }
+
+    &:active {
+      background-color: rgb(186, 39, 50);
+      border-bottom: 5px solid rgb(142, 30, 38);
+    }
 }
 
 .logo__link {
@@ -24,4 +30,8 @@
   line-height: 24px;
   font-family: "Cuprum Regular", "Arial", sans-serif;
   color: $color-white;
+}
+
+.logo__link--footer {
+  font-size: 30px;
 }
