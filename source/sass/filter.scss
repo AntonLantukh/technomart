@@ -1,12 +1,21 @@
+.filter {
+  width: 220px;
+  margin-left: 130px;
+}
+
 .filter__header {
+  margin: 0 0 14px 0;
+  padding: 6px 20px 6px 18px;
   font-size: 13px;
   line-height: 18px;
   font-family: "PTSans Regular", "Arial", sans-serif;
   color: $color-black;
   text-transform: uppercase;
+  background-color: rgb(247, 243, 236);
 }
 
 .filter__second-header {
+  margin: 15px 0 15px 0;
   font-size: 17px;
   line-height: 30px;
   font-family: "PTSans Bold", "Arial", sans-serif;
@@ -14,12 +23,43 @@
   text-transform: uppercase;
 }
 
+.filter__producer {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.filter__producer-input {
+  display: none;
+}
+
 .filter__producer-label {
+  position: relative;
+  display: block;
+  padding: 0 0 20px 34px;
   font-size: 15px;
   line-height: 20px;
   font-family: "PTSans Regular", "Arial", sans-serif;
   color: $color-black;
   text-transform: uppercase;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      width: 23px;
+      height: 23px;
+      content: "";
+      background-image: url("/../img/sprite.png");
+      background-position: -30px -5px;
+      background-repeat: no-repeat;
+    }
+}
+
+.filter__producer-input:checked + .filter__producer-label::before {
+  width: 27px;
+  background-position: -63px -5px;
+}
+
+.filter__second-header--energy {
+  margin: 20px 0 13px 0;
 }
 
 .filter__submit-button {

@@ -30,7 +30,7 @@
   width: 260px;
   height: 42px;
   margin-left: 223px;
-  padding-right: 10px;
+  padding-right: 7px;
   @include font;
 
   &::after {
@@ -165,6 +165,10 @@
     &:active::after {
       opacity: 0.5;
     }
+}
+
+.order__cart--catalog {
+  background-color: $color-red;
 }
 
 .order__new-order {

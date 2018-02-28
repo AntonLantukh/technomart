@@ -1,6 +1,6 @@
 'use strict'
 
-var popupToggler = document.querySelector('.service__element-button');
+var popupToggler = document.querySelector('.contacts__button');
 var popupClose = document.querySelector('.modal-popup__close');
 var popup = document.querySelector('.modal-popup');
 

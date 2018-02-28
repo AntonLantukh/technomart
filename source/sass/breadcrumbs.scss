@@ -1,3 +1,69 @@
+.breadcrumbs {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.breadcrumbs__list {
+  margin: 0;
+  padding: 20px 0 20px 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.breadcrumbs__element {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    position: absolute;
+    right: 15px;
+    top: 4px;
+    width: 9px;
+    height: 1px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 9px;
+    height: 1px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: rotate(-45deg);
+  }
+}
+
+.breadcrumbs__element--home {
+  position: absolute;
+  left: -1px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  padding-right: 34px;
+  font-size: 0;
+  background-image: url("/../img/icon-home.png");
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs__element--catalog {
+  padding-right: 40px;
+  padding-left: 55px;
+}
+
+.breadcrumbs__element--instruments {
+  padding-right: 40px;
+}
+
+.breadcrumbs__element--perforators {
+  display: inline-block;
+  padding-right: 40px;
+}
+
 .breadcrumbs__link {
   font-size: 13px;
   line-height: 18px;

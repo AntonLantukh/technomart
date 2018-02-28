@@ -7,64 +7,73 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__register order-block">
-        <div class ="order-block__logo logo">
-          <a class ="order-block__logo-link">Техномарт</a>
-        </div>
-        <div class="order-block__search">
-          <form>
-             <input type="search" name="search" placeholder="Поиск:">
-          </form>
-        </div>
-        <div class="order-block__bookmark">
-          <span>Закладок: 0</span>
-        </div>
-        <div class="order-block__cart">
-          <span>Корзина: 0</span>
-        </div>
-        <div class="order-block__new-order">
-          <a>Оформить заказ</a>
+      <div class="order">
+        <div class="order__wrapper">
+          <div class ="order__logo logo">
+            <a class ="logo__link">Техномарт</a>
+          </div>
+          <div class="order__search">
+            <form method="post">
+              <input class="order__search-input" placeholder="Поиск:">
+            </form>
+          </div>
+          <div class="order__bookmark">
+            <span>Закладки: 0</span>
+          </div>
+          <div class="order__cart order__cart--catalog">
+            <span>Корзина: 10</span>
+          </div>
+          <div class="order__new-order">
+            <a class="order__link">Оформить заказ</a>
+          </div>
         </div>
       </div>
       <div class="main-header__contacts authentification">
-        <div class="authentification__site-about">
-          <p>
-            Интернет-магазин
-            строительных материалов
-            и инструментов для ремонта
-          </p>
-        </div>
-        <div class="authentification__contacts">+7 (812) 555-05-55
-          <span class="authentification__phone">+7 (812) 555-05-55</span>
-          <span class="authentification__adress">г.Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</span>
-        </div>
-        <div class="authentification__buttons-container">
-          <a class="authentification__login-button">Войти</a>
-          <a class="desctiption-block__register-button">Регистрация</a>
+        <div class="authentification__wrapper">
+          <div class="authentification__site-about">
+            <p>
+              Интернет-магазин
+              строительных материалов <br>
+              и инструментов для ремонта
+            </p>
+          </div>
+          <div class="authentification__contacts authentification__contacts--catalaog">
+            <div class="authentification__phone">+7 (812) 555-05-55</div>
+            <div class="authentification__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+          </div>
+          <div class="authentification__buttons-container visually-hidden">
+            <a class="authentification__login-button reg-button">Войти</a>
+            <a class="authentification__register-button reg-button">Регистрация</a>
+          </div>
+          <div class="authentification__authorized">
+            <div class="authentification__name">Равшан Джамшутович</div>
+            <a class="authentification__orders">Мои заказы</a>
+            <a class="authentification__cabinet">Личный кабинет</a>
+          </div>
         </div>
       </div>
       <nav class="main-header__navigation main-nav">
-        <ul>
+        <ul class="main-nav__wrapper">
           <li class="main-nav__element">
-            <a href="#">Главная</a>
+            <a class="main-nav__link" href="#">Главная</a>
           </li>
           <li class="main-nav__element">
-            <a href="#">Компания</a>
+            <a class="main-nav__link" href="#">Компания</a>
           </li>
           <li class="main-nav__element">
-            <a href="#">Каталог</a>
+            <a class="main-nav__link" href="#">Каталог</a>
           </li>
           <li class="main-nav__element">
-            <a href="#">Новости</a>
+            <a class="main-nav__link" href="#">Новости</a>
           </li>
           <li class="main-nav__element">
-            <a href="#">Спецпредложения</a>
+            <a class="main-nav__link" href="#">Спецпредложения</a>
           </li>
           <li class="main-nav__element">
-            <a href="">Доставка</a>
+            <a class="main-nav__link" href="">Доставка</a>
           </li>
           <li class="main-nav__element">
-            <a href="#">Контакты</a>
+            <a class="main-nav__link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -72,110 +81,40 @@
     <main class="catalog">
       <div class="catalog-wrapper">
         <section class="breadcrumbs">
-          <ul>
-            <li class="breadcrumbs__element">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__element breadcrumbs__element--home">
               <a>Домой</a>
             </li>
-            <li class="breadcrumbs__element">
+            <li class="breadcrumbs__element breadcrumbs__element--catalog">
               <a class="breadcrumbs__link">Каталог</a>
             </li>
-            <li class="breadcrumbs__element">
+            <li class="breadcrumbs__element breadcrumbs__element--instruments">
               <a class="breadcrumbs__link">Инструмент</a>
             </li>
-            <li class="breadcrumbs__element">
+            <li class="breadcrumbs__element--perforators">
               <a class="breadcrumbs__link">Перфораторы</a>
             </li>
           </ul>
         </section>
-        <div>
+        <div class="catalog__header-wrapper">
           <h1 class="catalog__header">Перфораторы</h1>
         </div>
-        <section class="catalog__sorting sorting">
-          <span class="soring__header">Сортировка:</span>
-          <ul class="sorting__wrapper">
-            <li class="sorting__element sorting__element--price">По цене</li>
-            <li class="sorting__element sorting__element--type">По типу</li>
-            <li class="sorting__element sorting__element--function">По функционалу</li>
-          </ul>
-        </section>
-        <section class="catalog__goods goods">
-          <div class="good">
-            <img src="img/good-3000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 3000</h3>
-            <span class="good__old-price">22500 р.</span>
-            <span class="good__new-prce">15500 р.</span>
-          </div>
-          <div class="good">
-            <img src="img/good-6000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 6000</h3>
-            <span class="good__old-price">30500 р.</span>
-            <span class="good__new-prce">25500 р.</span>
-          </div>
-          <div class="good good--new">
-            <img src="img/good-2000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 2000</h3>
-            <span class="good__new-prce">12500 р.</span>
-          </div>
-          <div class="good">
-            <img src="img/good-3000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 3000</h3>
-            <span class="good__old-price">22500 р.</span>
-            <span class="good__new-prce">15500 р.</span>
-          </div>
-          <div class="good good--new">
-            <img src="img/good-6000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 6000</h3>
-            <span class="good__old-price">30500 р.</span>
-            <span class="good__new-prce">25500 р.</span>
-          </div>
-          <div class="good">
-            <img src="img/good-2000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 2000</h3>
-            <span class="good__new-prce">12500 р.</span>
-          </div>
-          <div class="good good--new">
-            <img src="img/good-3000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 3000</h3>
-            <span class="good__old-price">22500 р.</span>
-            <span class="good__new-prce">15500 р.</span>
-          </div>
-          <div class="good">
-            <img src="img/good-6000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 6000</h3>
-            <span class="good__old-price">30500 р.</span>
-            <span class="good__new-prce">25500 р.</span>
-          </div>
-          <div class="good">
-            <img src="img/good-2000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 2000</h3>
-            <span class="good__new-prce">12500 р.</span>
-          </div>
-        </section>
         <section class="catalog__filter filter">
           <form>
             <h2 class="filter__header">Фильтр:</h2>
-            <h3 class="filter__second-header">Цена:</h3>
-            <div class="filter__range">
-              <input type="range">
-              <label>Диапозон</label>
+            <div class="filter__range filter-range">
+              <h3 class="filter-range__header">Цена:</h3>
+              <div class="filter-range__togglers">
+                <div class="filter-range__scale">
+                  <div class="filter-range__bar"></div>
+                  <div class="filter-range__toggle filter-range__toggle--min"></div>
+                  <div class="filter-range__toggle filter-range__toggle--max"></div>
+                </div>
+              </div>
+              <div class="filter-range__controls">
+                <input class="filter-range__input" type="text" name="min-price" value="0">
+                <input class="filter-range__input" type="text" name="max-price" value="30000">
+              </div>
             </div>
             <div class="filter__producer">
               <h3 class="filter__second-header">Производители:</h3>
@@ -191,16 +130,95 @@
               <label class="filter__producer-label" for="hitachi">Hitachi</label>
             </div>
             <div class="filter__energy">
-              <h3 class="filter__energy-header">Питание:</h3>
+              <h3 class="filter__second-header filter__second-header--energy">Питание:</h3>
               <input class="filter__producer-input" name="feed" type="radio" id="accumulator" checked>
-              <label class="filter__producer-label" for="accumulator">Аккумуляторные</label>
+              <label class="filter__producer-label filter__producer-label--accumulator" for="accumulator">Аккумуляторные</label>
               <input class="filter__producer-input" name="feed" type="radio" id="net" checked>
-              <label class="filter__producer-label" for="net">Сетевые</label>
+              <label class="filter__producer-label filter__producer-label--net" for="net">Сетевые</label>
             </div>
             <div class="filter__submit">
               <input class="filter__submit-button" type="submit" value="Показать">
             </div>
           </form>
+        </section>
+        <section class="catalog__sorting sorting">
+          <span class="soring__header">Сортировка:</span>
+          <ul class="sorting__wrapper">
+            <li class="sorting__element sorting__element--price">По цене</li>
+            <li class="sorting__element sorting__element--type">По типу</li>
+            <li class="sorting__element sorting__element--function">По функционалу</li>
+          </ul>
+        </section>
+        <section class="catalog__goods">
+          <div class="good">
+            <img src="img/good-3000.jpg">
+            <button class="good__button good__button--buy">Купить</button>
+            <button class="good__button good__button--bookmark">В закладки</button>
+            <h3 class="good__name">Перформатор BOSCH BFG 3000</h3>
+            <span class="good__old-price">22500 р.</span>
+            <span class="good__new-prce">15500 р.</span>
+          </div>
+          <div class="good">
+            <img src="img/good-6000.jpg">
+            <button class="good__button good__button--buy">Купить</button>
+            <button class="good__button good__button--bookmark">В закладки</button>
+            <h3 class="good__name">Перформатор BOSCH BFG 6000</h3>
+            <span class="good__old-price">30500 р.</span>
+            <span class="good__new-prce">25500 р.</span>
+          </div>
+          <div class="good good--new">
+            <img src="img/good-2000.jpg">
+            <button class="good__button good__button--buy">Купить</button>
+            <button class="good__button good__button--bookmark">В закладки</button>
+            <h3 class="good__name">Перформатор BOSCH BFG 2000</h3>
+            <span class="good__new-prce">12500 р.</span>
+          </div>
+          <div class="good">
+            <img src="img/good-3000.jpg">
+            <button class="good__button good__button--buy">Купить</button>
+            <button class="good__button good__button--bookmark">В закладки</button>
+            <h3 class="good__name">Перформатор BOSCH BFG 3000</h3>
+            <span class="good__old-price">22500 р.</span>
+            <span class="good__new-prce">15500 р.</span>
+          </div>
+          <div class="good good--new">
+            <img src="img/good-6000.jpg">
+            <button class="good__button good__button--buy">Купить</button>
+            <button class="good__button good__button--bookmark">В закладки</button>
+            <h3 class="good__name">Перформатор BOSCH BFG 6000</h3>
+            <span class="good__old-price">30500 р.</span>
+            <span class="good__new-prce">25500 р.</span>
+          </div>
+          <div class="good">
+            <img src="img/good-2000.jpg">
+            <button class="good__button good__button--buy">Купить</button>
+            <button class="good__button good__button--bookmark">В закладки</button>
+            <h3 class="good__name">Перформатор BOSCH BFG 2000</h3>
+            <span class="good__new-prce">12500 р.</span>
+          </div>
+          <div class="good good--new">
+            <img src="img/good-3000.jpg">
+            <button class="good__button good__button--buy">Купить</button>
+            <button class="good__button good__button--bookmark">В закладки</button>
+            <h3 class="good__name">Перформатор BOSCH BFG 3000</h3>
+            <span class="good__old-price">22500 р.</span>
+            <span class="good__new-prce">15500 р.</span>
+          </div>
+          <div class="good">
+            <img src="img/good-6000.jpg">
+            <button class="good__button good__button--buy">Купить</button>
+            <button class="good__button good__button--bookmark">В закладки</button>
+            <h3 class="good__name">Перформатор BOSCH BFG 6000</h3>
+            <span class="good__old-price">30500 р.</span>
+            <span class="good__new-prce">25500 р.</span>
+          </div>
+          <div class="good">
+            <img src="img/good-2000.jpg">
+            <button class="good__button good__button--buy">Купить</button>
+            <button class="good__button good__button--bookmark">В закладки</button>
+            <h3 class="good__name">Перформатор BOSCH BFG 2000</h3>
+            <span class="good__new-prce">12500 р.</span>
+          </div>
         </section>
         <section class="catalog__pagination pagination">
           <ul class="pagination__wrapper">
@@ -222,68 +240,72 @@
     </main>
     <footer class="main-footer">
       <section class="main-footer__element footer-nav">
-        <div class="footer-nav__element">
-          <div class ="footer-nav__logo">
-            <a class="footer-nav__logo-link">Техномарт</a>
-          </div>
-          <p class ="footer-nav__address">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
-          <p class ="footer-nav__address">+7 (812) 555-05-55</p>
-        </div>
-        <div class="footer-nav__wrapper">
+        <div class="main-footer__wrapper">
           <div class="footer-nav__element">
-            <ul class="footer-nav__list">
-              <li class="footer-nav__list-element">
-                <a href="#">Компания</a>
-              </li>
-              <li class="footer-nav__list-element">
-                <a href="#">Новости</a>
-              </li>
-              <li class="footer-nav__list-element">
-                <a href="#">Каталог</a>
-              </li>
-              <li class="footer-nav__list-element">
-                <a href="#">Доставка</a>
-              </li>
-              <li>
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
+            <div class ="footer-nav__logo logo">
+              <a class="logo__link logo__link--footer">Техномарт</a>
+            </div>
+            <p class ="footer-nav__address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+            <p class ="footer-nav__phone">+7 (812) 555-05-55</p>
+          </div>
+          <div class="footer-nav__wrapper">
+            <div class="footer-nav__element">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__list-element">
+                  <a class="footer-nav__link" href="#">Компания</a>
+                </li>
+                <li class="footer-nav__list-element">
+                  <a class="footer-nav__link" href="#">Новости</a>
+                </li>
+                <li class="footer-nav__list-element">
+                  <a class="footer-nav__link" href="#">Каталог</a>
+                </li>
+                <li class="footer-nav__list-element">
+                  <a class="footer-nav__link" href="#">Доставка</a>
+                </li>
+                <li>
+                  <a class="footer-nav__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-footer__element popular-categoties">
+              <ul class="popular-categoties__list features">
+                <li class="features__element">
+                  <a class="features__link" href="#">Материалы</a>
+                </li>
+                <li class="features__element">
+                  <a class="features__link" href="#">Техника</a>
+                </li>
+                <li class="features__element">
+                  <a class="features__link" href="#">Инструмент</a>
+                </li>
+                <li class="features__element">
+                  <a class="features__link" href="#">Спецпредложения</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="main-footer__element popular-categoties">
-          <ul class="popular-categoties__list features">
-            <li class="features__element">
-              <a href="#">Материалы</a>
-            </li>
-            <li class="features__element">
-              <a href="#">Техника</a>
-            </li>
-            <li class="features__element">
-              <a href="#">Инструмент</a>
-            </li>
-            <li class="features__element">
-              <a href="#">Спецпредложения</a>
-            </li>
-          </ul>
-      </div>
       </section>
       <section class="main-footer__contacts footer-madeby">
-        <div class="footer-madeby__copyright">
-          <p>&copy; 2010 - 2017 Компания "Техномарт"
-          Все права защищены </p>
-        </div>
-        <div class="footer-madeby__social social-buttons">
-          <a class="social-buttons__item" href="#">Вконтакте</a>
-          <a class="social-buttons__item" href="#">Фейсбук</a>
-          <a class="social-buttons__item" href="#">Инстаграм</a>
-        </div>
-        <div class="footer-madeby__e-mail">
-          <span>Обратная связь:</span>
-          <a>mail@htmlacademy.ru</a>
-        </div>
-        <div class="footer-madeby__author">
-          <span>Разработано -</span>
-          <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+        <div class="footer-madeby__wrapper">
+          <div class="footer-madeby__copyright">
+            <p>&copy; 2010-2017 Компания «Техномарт»
+            Все права защищены </p>
+          </div>
+          <div class="footer-madeby__social social-buttons">
+            <a class="social-buttons__item social-buttons__item--vk" href="#">Вконтакте</a>
+            <a class="social-buttons__item social-buttons__item--fb" href="#">Фейсбук</a>
+            <a class="social-buttons__item social-buttons__item--insta" href="#">Инстаграм</a>
+          </div>
+          <div class="footer-madeby__e-mail">
+            <div class="footer-madeby__about">Обратная связь:</div>
+            <a a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="footer-madeby__author">
+            <div class="footer-madeby__about">Разработано &ndash;</div>
+            <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+          </div>
         </div>
       </section>
     </footer>

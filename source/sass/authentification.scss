@@ -112,3 +112,105 @@
      color: rgba(0, 0, 0, 0.3);
    }
 }
+
+.authentification__authorized {
+  width: 300px;
+}
+
+.authentification__name {
+  position: relative;
+  margin-bottom: 8px;
+  padding: 12px 43px 12px 47px;
+  font-size: 20px;
+  line-height: 18px;
+  font-family: "Cuprum Bold", "Arial", sans-serif;
+  color: $color-black;
+  background-color: $color-white;
+  cursor: pointer;
+
+    &::before {
+      position: absolute;
+      right: 10px;
+      width: 20px;
+      height: 18px;
+      content: "";
+      background-image: url("../img/icon-logout.png");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      left: 13px;
+      width: 20px;
+      height: 17px;
+      content: "";
+      background-position: -181px -186px;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+    }
+
+    &:hover::before {
+      background-image: url("../img/icon-logout-blue.png");
+    }
+
+    &:hover::after {
+      background-position: 100% 100%;
+      background-image: url("../img/icon-user-blue.png");
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+}
+
+.authentification__orders {
+  position: relative;
+  margin-left: 18px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  color: $color-blue;
+  text-decoration: underline;
+  cursor: pointer;
+
+    &::after {
+      position: absolute;
+      top: 7px;
+      right: -19px;
+      width: 4px;
+      height: 4px;
+      background-color: $color-blue;
+      border-radius: 50%;
+      content: "";
+    }
+
+    &:hover {
+      color: $color-red;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+}
+
+.authentification__cabinet {
+  margin-left: 28px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  color: $color-blue;
+  text-decoration: underline;
+  cursor: pointer;
+
+    &:hover {
+      color: $color-red;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+}
+
+.authentification__contacts--catalaog {
+  margin-left: 33px;
+}
