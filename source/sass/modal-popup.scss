@@ -1,0 +1,93 @@
+.modal-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 660px;
+  height: 454px;
+  margin-top: -227px;
+  margin-left: -330px;
+  box-sizing: border-box;
+  background-color: $color-white;
+  border-top: 6px solid $color-red;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal-popup__container {
+  padding: 50px 60px 35px 90px;
+}
+
+.modal-popup__flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.modal-popup__label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Cuprum Bold", "Arial", sans-serif;
+  color: $color-black;
+}
+
+.modal-popup__input {
+  display: block;
+  width: 170px;
+  padding: 10px 43px 10px 15px;
+  margin-right: 23px;
+  margin-bottom: 23px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "PTSans Regular", "Arial", sans-serif;
+  color: $color-black;
+  border: 1px solid rgb(169, 169, 169);
+}
+
+.modal-popup__input--wide {
+  width: 426px;
+  height: 100px;
+  margin-bottom: 78px;
+  margin-left: -2px;
+}
+
+.modal-popup__close {
+  position: absolute;
+  top: 2px;
+  right: 1px;
+
+  width: 35px;
+  height: 35px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-popup__close::before,
+.modal-popup__close::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 3px;
+
+  width: 30px;
+  height: 4px;
+  background-color: $color-red;
+  border-radius: 1px;
+}
+
+.modal-popup__close::before {
+  transform: rotate(45deg);
+}
+
+.modal-popup__close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-popup__button {
+  width: 487px;
+  margin-left: -3px;
+}

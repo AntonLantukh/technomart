@@ -22,6 +22,14 @@
       content: "";
       background-image: url("/img/sprite.png")
     }
+
+    &:hover {
+      background-color: rgb(238, 54, 67);
+    }
+
+    &:active {
+      background-color: rgb(238, 54, 67);
+    }
 }
 
 .social-buttons__item--vk::after {

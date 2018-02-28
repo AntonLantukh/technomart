@@ -47,4 +47,12 @@
   font-family: "Cuprum Regular", "Arial", sans-serif;
   color: $color-white;
   text-decoration: none;
+
+    &:hover {
+      border-bottom: 1px solid $color-white;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.5);
+    }
 }

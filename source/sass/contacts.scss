@@ -24,11 +24,52 @@
 
 .contacts__map {
   padding-bottom: 37px;
+  cursor: pointer;
 }
 
 .contacts__map-full-screen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
   width: 940px;
   height: 450px;
-  margin: 0 auto;
+  margin-top: -225px;
+  margin-left: -470px;
   box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+.contacts__map-close {
+  position: absolute;
+  top: -35px;
+  right: -34px;
+
+  width: 35px;
+  height: 35px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.contacts__map-close::before,
+.contacts__map-close::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 3px;
+
+  width: 30px;
+  height: 4px;
+  background-color: $color-red;
+  border-radius: 1px;
+}
+
+.contacts__map-close::before {
+  transform: rotate(45deg);
+}
+
+.contacts__map-close::after {
+  transform: rotate(-45deg);
 }

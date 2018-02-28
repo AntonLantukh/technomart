@@ -51,6 +51,14 @@
   font-family: "Cuprum Regular", "Arial", sans-serif;
   color: $color-yellow;
   text-decoration: none;
+
+    &:hover {
+      border-bottom: 1px solid $color-yellow;
+    }
+
+    &:active {
+      color: rgb(238, 54, 67);
+    }
 }
 
 .footer-madeby__author a {
@@ -59,4 +67,12 @@
   font-family: "Cuprum Regular", "Arial", sans-serif;
   color: $color-yellow;
   text-decoration: none;
+
+    &:hover {
+      border-bottom: 1px solid $color-yellow;
+    }
+
+    &:active {
+      color: rgb(238, 54, 67);
+    }
 }

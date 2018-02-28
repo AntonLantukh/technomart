@@ -14,4 +14,12 @@
   font-family: "Cuprum Regular", "Arial", sans-serif;
   color: $color-yellow;
   text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid $color-yellow;
+  }
+
+  &:active {
+    color: rgba(255, 209, 128, 0.5);
+  }
 }
