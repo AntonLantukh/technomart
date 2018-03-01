@@ -16,9 +16,18 @@
 }
 
 .main-nav__element {
-  width: 140px;
-  padding: 20px 34px 17px 27px;
   text-align: center;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 20px 31px 17px 30px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 17px;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
+  color: $color-white;
+  text-decoration: none;
   cursor: pointer;
 
   &:hover {
@@ -34,19 +43,10 @@
   }
 }
 
-.main-nav__element:nth-child(1) {
+.main-nav__link--first {
   padding-left: 52px;
 }
 
-.main-nav__element:nth-child(7) {
+.main-nav__link--last {
   padding-right: 52px;
-}
-
-
-.main-nav__link {
-  font-size: 17px;
-  line-height: 17px;
-  font-family: "Cuprum Regular", "Arial", sans-serif;
-  color: $color-white;
-  text-decoration: none;
 }

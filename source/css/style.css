@@ -912,7 +912,8 @@ template {
   margin-top: -225px;
   margin-left: -470px;
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  z-index: 20; }
 
 .contacts__map-close {
   position: absolute;
@@ -1427,7 +1428,8 @@ template {
   width: 223px;
   height: 16px;
   background-color: #ee3643;
-  border-bottom: 5px solid #b52933; }
+  border-bottom: 5px solid #b52933;
+  cursor: pointer; }
   .logo:hover {
     background-color: #ca2c37;
     border-bottom: 5px solid #9a212a; }
@@ -1501,29 +1503,30 @@ template {
   border-bottom: 5px solid #293449; }
 
 .main-nav__element {
-  width: 140px;
-  padding: 20px 34px 17px 27px;
-  text-align: center;
-  cursor: pointer; }
-  .main-nav__element:hover {
-    background-color: #293449; }
-  .main-nav__element:active {
-    background-color: #1d2739; }
-  .main-nav__element:active .main-nav__link {
-    color: rgba(255, 255, 255, 0.5); }
-
-.main-nav__element:nth-child(1) {
-  padding-left: 52px; }
-
-.main-nav__element:nth-child(7) {
-  padding-right: 52px; }
+  text-align: center; }
 
 .main-nav__link {
+  display: block;
+  padding: 20px 31px 17px 30px;
+  text-align: center;
   font-size: 17px;
   line-height: 17px;
   font-family: "Cuprum Regular", "Arial", sans-serif;
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
+  .main-nav__link:hover {
+    background-color: #293449; }
+  .main-nav__link:active {
+    background-color: #1d2739; }
+  .main-nav__link:active .main-nav__link {
+    color: rgba(255, 255, 255, 0.5); }
+
+.main-nav__link--first {
+  padding-left: 52px; }
+
+.main-nav__link--last {
+  padding-right: 52px; }
 
 .modal-cart {
   position: fixed;
