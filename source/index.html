@@ -74,7 +74,9 @@
       </nav>
     </header>
     <main>
+      <h1 class="visually-hidden">Техномарт</h1>
       <section class="assortment">
+        <h2 class="visually-hidden">Категории</h2>
         <div class="assortment__element category category--materials category--new-label">
           <h3 class="category__name">Материалы</h3>
           <a class="category__button">На любой вкус</a>
@@ -141,7 +143,7 @@
             <div class="good__price good__price--old">30500 р.</div>
             <div class="good__price good__price--new">25500 р.</div>
           </div>
-          <div class="popular-goods__element good good--new">
+          <div class="popular-goods__element good good--new good--last">
             <img class="good__image" src="img/good-2000.jpg">
             <button class="good__button good__button--buy">Купить</button>
             <button class="good__button good__button--bookmark">В закладки</button>
@@ -363,9 +365,21 @@
         </form>
       </div>
     </div>
+    <div class="modal-cart visually-hidden">
+      <div class="modal-cart__container">
+        <button class="modal-cart__close">Закрыть</button>
+        <h3 class="modal-cart__header">Товар добавлен в корзину!</h3>
+        <div class="modal-cart__wrapper">
+          <a class="modal-cart__order main-button">Оформить заказ</a>
+          <a class="modal-cart__continue main-button">Продолжить покупки</a>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay visually-hidden"></div>
     <script src="js/slider.js"></script>
     <script src="js/service-list.js"></script>
     <script src="js/modal-content.js"></script>
+    <script src="js/modal-cart.js"></script>
     <script src="js/contacts.js"></script>
   </body>
 </html>

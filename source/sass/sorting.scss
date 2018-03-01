@@ -1,17 +1,112 @@
 .sorting {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   width: 700px;
+  margin-bottom: 20px;
+  padding: 6px 10px 10px 20px;
+  box-sizing: border-box;
+  background-color: rgb(247, 243, 236);
 }
 
 .soring__header {
+  display: inline-block;
+  margin: 0 136px 0 0;
   font-size: 13px;
   line-height: 18px;
   font-family: "PTSans Regular", "Arial", sans-serif;
   color: $color-black;
+  text-transform: uppercase;
 }
 
+.sorting__wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sorting__button {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.sorting__button--up {
+  right: 48px;
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    width: 0;
+    height: 0;
+    content: "";
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+
+  &:hover::before {
+    border-bottom: 10px solid rgba(0, 0, 0, 1);
+  }
+
+  &:active::before {
+    border-bottom: 10px solid $color-red;
+  }
+}
+
+.sorting__button--down {
+  right: 15px;
+
+  &::after {
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    width: 0;
+    height: 0;
+    content: "";
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    border-top: 10px solid rgba(0, 0, 0, 1);
+  }
+
+  &:active::after {
+    border-top: 10px solid $color-red;
+  }
+}
+
+
 .sorting__element {
+  margin-right: 69px;
   font-size: 13px;
   line-height: 18px;
   font-family: "PTSans Regular", "Arial", sans-serif;
+  text-transform: uppercase;
   color: $color-black;
+  border-bottom: 1px dotted $color-red;
+  opacity: 0.3;
+  cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid $color-red;
+      opacity: 1;
+    }
+
+    &:active {
+      color: $color-red;
+      border-bottom: none;
+      opacity: 1;
+    }
 }

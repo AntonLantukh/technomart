@@ -10,6 +10,7 @@
   background-color: $color-white;
   border-top: 6px solid $color-red;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  z-index: 20;
 }
 
 .modal-popup__container {

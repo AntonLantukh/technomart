@@ -131,109 +131,118 @@
             </div>
             <div class="filter__energy">
               <h3 class="filter__second-header filter__second-header--energy">Питание:</h3>
-              <input class="filter__producer-input" name="feed" type="radio" id="accumulator" checked>
-              <label class="filter__producer-label filter__producer-label--accumulator" for="accumulator">Аккумуляторные</label>
-              <input class="filter__producer-input" name="feed" type="radio" id="net" checked>
-              <label class="filter__producer-label filter__producer-label--net" for="net">Сетевые</label>
+              <input class="filter__energy-input" name="feed" type="radio" id="accumulator" checked>
+              <label class="filter__energy-label filter__producer-label--accumulator" for="accumulator">Аккумуляторные</label>
+              <input class="filter__energy-input" name="feed" type="radio" id="net" checked>
+              <label class="filter__energy-label filter__producer-label--net" for="net">Сетевые</label>
             </div>
             <div class="filter__submit">
               <input class="filter__submit-button" type="submit" value="Показать">
             </div>
           </form>
         </section>
-        <section class="catalog__sorting sorting">
-          <span class="soring__header">Сортировка:</span>
-          <ul class="sorting__wrapper">
-            <li class="sorting__element sorting__element--price">По цене</li>
-            <li class="sorting__element sorting__element--type">По типу</li>
-            <li class="sorting__element sorting__element--function">По функционалу</li>
-          </ul>
-        </section>
-        <section class="catalog__goods">
-          <div class="good">
-            <img src="img/good-3000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 3000</h3>
-            <span class="good__old-price">22500 р.</span>
-            <span class="good__new-prce">15500 р.</span>
-          </div>
-          <div class="good">
-            <img src="img/good-6000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 6000</h3>
-            <span class="good__old-price">30500 р.</span>
-            <span class="good__new-prce">25500 р.</span>
-          </div>
-          <div class="good good--new">
-            <img src="img/good-2000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 2000</h3>
-            <span class="good__new-prce">12500 р.</span>
-          </div>
-          <div class="good">
-            <img src="img/good-3000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 3000</h3>
-            <span class="good__old-price">22500 р.</span>
-            <span class="good__new-prce">15500 р.</span>
-          </div>
-          <div class="good good--new">
-            <img src="img/good-6000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 6000</h3>
-            <span class="good__old-price">30500 р.</span>
-            <span class="good__new-prce">25500 р.</span>
-          </div>
-          <div class="good">
-            <img src="img/good-2000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 2000</h3>
-            <span class="good__new-prce">12500 р.</span>
-          </div>
-          <div class="good good--new">
-            <img src="img/good-3000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 3000</h3>
-            <span class="good__old-price">22500 р.</span>
-            <span class="good__new-prce">15500 р.</span>
-          </div>
-          <div class="good">
-            <img src="img/good-6000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 6000</h3>
-            <span class="good__old-price">30500 р.</span>
-            <span class="good__new-prce">25500 р.</span>
-          </div>
-          <div class="good">
-            <img src="img/good-2000.jpg">
-            <button class="good__button good__button--buy">Купить</button>
-            <button class="good__button good__button--bookmark">В закладки</button>
-            <h3 class="good__name">Перформатор BOSCH BFG 2000</h3>
-            <span class="good__new-prce">12500 р.</span>
-          </div>
-        </section>
+        <div>
+          <section class="catalog__sorting sorting">
+            <h2 class="visually-hidden">Сортировка</h2>
+            <span class="soring__header">Сортировка:</span>
+            <ul class="sorting__wrapper">
+              <li class="sorting__element sorting__element--price">По цене</li>
+              <li class="sorting__element sorting__element--type">По типу</li>
+              <li class="sorting__element sorting__element--function">По функционалу</li>
+            </ul>
+            <button class="sorting__button sorting__button--up">Вверх</button>
+            <button class="sorting__button sorting__button--down">Вниз</button>
+          </section>
+          <section class="catalog__goods">
+            <h2 class="visually-hidden">Каталог товаров</h2>
+            <div class="popular-goods__element good">
+              <img class="good__image" src="img/good-3000.jpg">
+              <button class="good__button good__button--buy">Купить</button>
+              <button class="good__button good__button--bookmark">В закладки</button>
+              <h3 class="good__name">Перфоратор BOSCH BFG 3000</h3>
+              <div class="good__price good__price--old">22500 р.</div>
+              <div class="good__price good__price--new">15500 р.</div>
+            </div>
+            <div class="popular-goods__element good">
+              <img class="good__image" src="img/good-6000.jpg">
+              <button class="good__button good__button--buy">Купить</button>
+              <button class="good__button good__button--bookmark">В закладки</button>
+              <h3 class="good__name">Перфоратор BOSCH BFG 6000</h3>
+              <div class="good__price good__price--old">30500 р.</div>
+              <div class="good__price good__price--new">25500 р.</div>
+            </div>
+            <div class="popular-goods__element good good--new good--last">
+              <img class="good__image" src="img/good-2000.jpg">
+              <button class="good__button good__button--buy">Купить</button>
+              <button class="good__button good__button--bookmark">В закладки</button>
+              <h3 class="good__name">Перфоратор BOSCH BFG 2000</h3>
+              <div class="good__price good__price--new">12500 р.</div>
+            </div>
+            <div class="popular-goods__element good">
+              <img class="good__image" src="img/good-3000.jpg">
+              <button class="good__button good__button--buy">Купить</button>
+              <button class="good__button good__button--bookmark">В закладки</button>
+              <h3 class="good__name">Перфоратор BOSCH BFG 3000</h3>
+              <div class="good__price good__price--old">22500 р.</div>
+              <div class="good__price good__price--new">15500 р.</div>
+            </div>
+            <div class="popular-goods__element good good--new">
+              <img class="good__image" src="img/good-6000.jpg">
+              <button class="good__button good__button--buy">Купить</button>
+              <button class="good__button good__button--bookmark">В закладки</button>
+              <h3 class="good__name">Перфоратор BOSCH BFG 6000</h3>
+              <div class="good__price good__price--old">30500 р.</div>
+              <div class="good__price good__price--new">25500 р.</div>
+            </div>
+            <div class="popular-goods__element good good--last">
+              <img class="good__image" src="img/good-2000.jpg">
+              <button class="good__button good__button--buy">Купить</button>
+              <button class="good__button good__button--bookmark">В закладки</button>
+              <h3 class="good__name">Перфоратор BOSCH BFG 2000</h3>
+              <div class="good__price good__price--new">12500 р.</div>
+            </div>
+            <div class="popular-goods__element good good--new">
+              <img class="good__image" src="img/good-3000.jpg">
+              <button class="good__button good__button--buy">Купить</button>
+              <button class="good__button good__button--bookmark">В закладки</button>
+              <h3 class="good__name">Перфоратор BOSCH BFG 3000</h3>
+              <div class="good__price good__price--old">22500 р.</div>
+              <div class="good__price good__price--new">15500 р.</div>
+            </div>
+            <div class="popular-goods__element good">
+              <img class="good__image" src="img/good-6000.jpg">
+              <button class="good__button good__button--buy">Купить</button>
+              <button class="good__button good__button--bookmark">В закладки</button>
+              <h3 class="good__name">Перфоратор BOSCH BFG 6000</h3>
+              <div class="good__price good__price--old">30500 р.</div>
+              <div class="good__price good__price--new">25500 р.</div>
+            </div>
+            <div class="popular-goods__element good good--last">
+              <img class="good__image" src="img/good-2000.jpg">
+              <button class="good__button good__button--buy">Купить</button>
+              <button class="good__button good__button--bookmark">В закладки</button>
+              <h3 class="good__name">Перфоратор BOSCH BFG 2000</h3>
+              <div class="good__price good__price--new">12500 р.</div>
+            </div>
+          </section>
+        </div>
         <section class="catalog__pagination pagination">
+          <h2 class="visually-hidden">пагинация</h2>
           <ul class="pagination__wrapper">
-            <li class="pagination__element"><a class="pagination__link">1</a></li>
-            <li class="pagination__element"><a class="pagination__link">2</a></li>
-            <li class="pagination__element"><a class="pagination__link">3</a></li>
-            <li class="pagination__element"><a class="pagination__link">Следующая</a></li>
+            <li class="pagination__element pagination__element--active"><a class="pagination__link" href="#">1</a></li>
+            <li class="pagination__element"><a class="pagination__link" href="#">2</a></li>
+            <li class="pagination__element"><a class="pagination__link" href="#">3</a></li>
+            <li class="pagination__element pagination__element--next"><a class="pagination__link" href="#">Следующая</a></li>
           </ul>
         </section>
-        <div class="perforators">
-          <h2 сlass="perforators__header">Пара слов о перфораторах</h2>
+      </div>
+      <div class="perforators">
+        <div class="perforators__wrapper">
+          <h2 class="perforators__head">Пара слов о перфораторах</h2>
           <p class="perforators__description">
-            Перфоратор - универсальный строительный инструмент. Предназначен для сверления и дробления отверстий в кирпиче, бетоне и камне.
-            Существуют электормеханические и пневматические первораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
-            асортиментном ряду есть выбор "трехрежимников: в одном устройстве будут совмещены отбойный молоток и ударная дрель."
+            Перфоратор &ndash; универсальный строительный инструмент. Предназначен для сверления и дробления отверстий в кирпиче, бетоне и камне. <br>
+            Существуют электормеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
+            асортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
         </div>
       </div>
@@ -309,5 +318,17 @@
         </div>
       </section>
     </footer>
+    <div class="modal-cart visually-hidden">
+      <div class="modal-cart__container">
+        <button class="modal-cart__close">Закрыть</button>
+        <h3 class="modal-cart__header">Товар добавлен в корзину!</h3>
+        <div class="modal-cart__wrapper">
+          <a class="modal-cart__order main-button">Оформить заказ</a>
+          <a class="modal-cart__continue main-button">Продолжить покупки</a>
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay visually-hidden"></div>
+    <script src="js/modal-cart.js"></script>
   </body>
 </html>

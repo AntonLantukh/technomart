@@ -1,3 +1,8 @@
+.catalog {
+  width: 100%;
+  background-color: $color-white;
+}
+
 .catalog__header {
   margin: 0;
   font-size: 30px;
@@ -9,8 +14,11 @@
 }
 
 .catalog-wrapper {
-  width: 100%;
-  background-color: $color-white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .catalog__header-wrapper {
@@ -22,5 +30,9 @@
 }
 
 .catalog__goods {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 700px;
+  margin-bottom: 12px;
 }

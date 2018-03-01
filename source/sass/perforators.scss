@@ -1,14 +1,30 @@
-.perforators__header {
+.perforators {
+  width: 100%;
+  background-color: rgb(242, 246, 248);
+}
+
+.perforators__wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 68px;
+}
+
+.perforators__head {
+  margin: 0;
+  padding-bottom: 32px;
   font-size: 30px;
   line-height: 24px;
-  font-family: "PTSans Regular", "Arial", sans-serif;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
   color: $color-black;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
 .perforators__description {
-  font-size: 13px;
+  margin: 0;
+  font-size: 14.8px;
   line-height: 24px;
-  font-family: "PTSans Regular", "Arial", sans-serif;
+  font-family: "Cuprum Regular", "Arial", sans-serif;
   color: $color-black;
 }

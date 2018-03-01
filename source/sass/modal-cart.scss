@@ -1,0 +1,104 @@
+.modal-cart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 752px;
+  height: 340px;
+  margin-top: -170px;
+  margin-left: -376px;
+  box-sizing: border-box;
+  background-color: $color-white;
+  border-top: 6px solid $color-red;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+.modal-cart__container {
+  position: relative;
+  padding: 88px 0 35px 0;
+
+    &:before {
+      position: absolute;
+      left: 100px;
+      top: 58px;
+      width: 88px;
+      height: 88px;
+      content: "";
+      background-image: url("/../img/cart-yes.png");
+      background-size: 95%;
+      background-repeat: no-repeat;
+    }
+}
+
+.modal-cart__close {
+  position: absolute;
+  top: 6px;
+  right: 1px;
+
+  width: 35px;
+  height: 35px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-cart__close::before,
+.modal-cart__close::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 3px;
+
+  width: 30px;
+  height: 4px;
+  background-color: $color-red;
+  border-radius: 1px;
+}
+
+.modal-cart__close::before {
+  transform: rotate(45deg);
+}
+
+.modal-cart__close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-cart__header {
+  width: 400px;
+  margin: 0 auto 80px 0;
+  padding-left: 218px;
+  font-size: 35px;
+  line-height: 18px;
+  font-family: "Cuprum Bold", "Arial", sans-serif;
+  font-weight: normal;
+  color: $color-black;
+}
+
+.modal-cart__wrapper {
+  display: flex;
+  width: 752px;
+  padding: 55px 50px 46px 100px;
+  margin: 0 auto;
+  background-color: rgb(241, 241, 241);
+  box-sizing: border-box;
+}
+
+.modal-cart__order {
+  width: 220px;
+  padding: 15px 22px;
+  margin-right: 29px;
+  font-size: 17px;
+  font-family: "Cuprum Bold", "Arial", sans-serif;
+}
+
+.modal-cart__continue {
+  width: 220px;
+  padding: 15px 22px;
+  color: $color-black;
+  font-size: 17px;
+  font-family: "Cuprum Bold", "Arial", sans-serif;
+  background-color: $color-white;
+}

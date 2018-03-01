@@ -1,6 +1,6 @@
 .filter {
   width: 220px;
-  margin-left: 130px;
+  margin-right: 20px;
 }
 
 .filter__header {
@@ -15,7 +15,7 @@
 }
 
 .filter__second-header {
-  margin: 15px 0 15px 0;
+  margin: 24px 0 15px 0;
   font-size: 17px;
   line-height: 30px;
   font-family: "PTSans Bold", "Arial", sans-serif;
@@ -29,6 +29,10 @@
 
 .filter__producer-input {
   display: none;
+
+  &:disabled .filter__producer-label::before {
+    opacity: 0.3;
+  }
 }
 
 .filter__producer-label {
@@ -50,6 +54,11 @@
       background-image: url("/../img/sprite.png");
       background-position: -30px -5px;
       background-repeat: no-repeat;
+      opacity: 0.7;
+    }
+
+    &:hover::before {
+      opacity: 1;
     }
 }
 
@@ -60,12 +69,62 @@
 
 .filter__second-header--energy {
   margin: 20px 0 13px 0;
+  font-size: 18px;
+}
+
+.filter__energy {
+  margin-bottom: 63px;
+}
+
+.filter__energy-input {
+  display: none;
+
+  &:disabled .filter__producer-label::before {
+    opacity: 0.3;
+  }
+}
+
+.filter__energy-label {
+  position: relative;
+  display: block;
+  padding: 0 0 20px 34px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "PTSans Regular", "Arial", sans-serif;
+  color: $color-black;
+  text-transform: uppercase;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      width: 25px;
+      height: 25px;
+      content: "";
+      background-image: url("/../img/sprite.png");
+      background-position: -211px -186px;
+      background-repeat: no-repeat;
+      opacity: 0.7;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+}
+
+.filter__energy-input:checked + .filter__energy-label::before {
+  background-position: -246px -186px;
 }
 
 .filter__submit-button {
+  width: 140px;
+  margin: 0 auto;
+  padding: 5px 10px;
   font-size: 13px;
   line-height: 18px;
   font-family: "PTSans Regular", "Arial", sans-serif;
   color: $color-black;
   text-transform: uppercase;
+  background-color: $color-white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }

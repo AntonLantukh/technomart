@@ -1,7 +1,47 @@
+.pagination {
+  width: 200px;
+  margin-left: 200px;
+  margin-bottom: 40px;
+}
+
+.pagination__wrapper {
+  display: flex;
+  list-style: none;
+}
+
+.pagination__element {
+  margin-right: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+    &:hover {
+      border: 1px solid rgb(189, 198, 202);
+    }
+
+    &:active {
+      border: 1px solid $color-red;
+    }
+}
+
+.pagination__element--active {
+  background-color: $color-red;
+}
+
+.pagination__element--active .pagination__link {
+  color: $color-white;
+}
+
+.pagination__element--next a {
+  padding: 10px 30px;
+}
+
 .pagination__link {
+  display: block;
+  padding: 10px 15px 5px 15px;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 15px;
   font-family: "PTSans Regular", "Arial", sans-serif;
   color: $color-black;
+  text-decoration: none;
   text-transform: uppercase;
 }

@@ -2,6 +2,7 @@
   position: relative;
   width: 220px;
   margin-right: 20px;
+  margin-bottom: 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
 
@@ -18,8 +19,12 @@
   }
 }
 
-.good:nth-child(4) {
+.good--last {
   margin-right: 0;
+}
+
+.good--last .good__name {
+  margin-bottom: 41px;
 }
 
 .good__name {
@@ -31,10 +36,6 @@
   font-family: "PTSans Bold", "Arial", sans-serif;
   color: $color-black;
   text-align: center;
-}
-
-.good:nth-child(4) .good__name {
-  margin-bottom: 41px;
 }
 
 .good__price {
